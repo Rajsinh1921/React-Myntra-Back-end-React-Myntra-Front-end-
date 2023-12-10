@@ -14,7 +14,7 @@ function FeatchItems() {
     const signal = controller.signal;
 
     dispatch(fetchStatusActions.markFetchingStarted());
-    fetch("http://localhost:8080/items", { signal })
+    fetch("https://react-myntra-back-end.onrender.com/items", { signal })
       .then((res) => res.json())
       .then(({ items }) => {
         dispatch(fetchStatusActions.markFetchDone());
@@ -25,7 +25,7 @@ function FeatchItems() {
     return () => {
       controller.abort();
     };
-  }, [featchStatus]);
+  }, []);
   return <></>;
 }
 
