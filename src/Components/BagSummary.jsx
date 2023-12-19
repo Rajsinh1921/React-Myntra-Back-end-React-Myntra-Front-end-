@@ -28,17 +28,17 @@ function BagSummary() {
           <div className="price-header">PRICE DETAILS ({totalItem} Items)</div>
           <div className="price-item">
             <span className="price-item-tag">Total MRP</span>
-            <span className="price-item-value">₹{totalMRP}</span>
+            <span className="price-item-value">${totalMRP}</span>
           </div>
           <div className="price-item">
-            <span className="price-item-tag">Discount on MRP</span>
+            <span className="price-item-tag">Discount</span>
             <span className="price-item-value priceDetail-base-discount">
-              -₹{totalDiscount}
+              -${totalDiscount}
             </span>
           </div>
           <div className="price-item">
             <span className="price-item-tag">Convenience Fee</span>
-            <span className="price-item-value">₹99</span>
+            <span className="price-item-value">$99</span>
           </div>
           <hr />
           <div className="price-footer">

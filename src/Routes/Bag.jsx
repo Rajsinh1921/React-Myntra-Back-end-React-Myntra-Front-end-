@@ -4,7 +4,7 @@ import Bagdetails from "../Components/BagItem";
 import { useSelector } from "react-redux";
 
 function Bag() {
-  const bagItems = useSelector((state) => state.bag); // Corrected state.Bag to state.bag
+  const bagItems = useSelector((state) => state.bag);
   const items = useSelector((state) => state.items);
   const finalItems = items.filter((item) => {
     const itemsIndex = bagItems.indexOf(item.id);
